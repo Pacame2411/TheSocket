@@ -1,0 +1,122 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1{
+    text-align: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#username{
+    padding: 10px;
+    margin: 5px;
+}
+
+#users {
+    width: 250px;
+    background-color: #e1e1e1;
+    padding: 10px;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#users ul {
+    list-style: none;
+    padding: 0;
+}
+
+#users li button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#chat-container {
+    margin-left: 280px;
+    width: calc(100% - 300px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#individual-chat {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#chat-messages div {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+form input[type=text] {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type=submit] {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #2980b9;
+}
